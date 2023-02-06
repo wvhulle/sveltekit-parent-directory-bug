@@ -11,6 +11,7 @@
 
 <section>
 	<h1>
+		<span class="text-xl text-red-500">qsdfqdsf </span>
 		<span class="welcome">
 			<picture>
 				<source srcset={welcome} type="image/webp" />
