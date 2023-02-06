@@ -5,7 +5,8 @@ import { createServer } from 'vite';
 import { sveltekit } from './node_modules/@sveltejs/kit/src/exports/vite/index.js';
 import tailwindcss from 'tailwindcss';
 
-
+import { test } from "$lib/test"
+console.log(test)
 const __dirname = fileURLToPath(new URL('.', import.meta.url))
 
     ; (async () => {
@@ -15,7 +16,7 @@ const __dirname = fileURLToPath(new URL('.', import.meta.url))
             plugins: [sveltekit()],
             css: {
                 postcss: {
-                    plugins: [tailwindcss()]
+                    plugins: [tailwindcss]
                 }
             },
             root: __dirname,
